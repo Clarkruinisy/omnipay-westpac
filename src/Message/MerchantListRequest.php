@@ -1,11 +1,11 @@
 <?php
 /**
- * PaywayRest Transaction Detail Request
+ * Westpac Transaction Detail Request
  */
-namespace Omnipay\PaywayRest\Message;
+namespace Omnipay\Westpac\Message;
 
 /**
- * PaywayRest Merchant ListRequest
+ * Westpac Merchant ListRequest
  *
  * @link https://www.payway.com.au/docs/rest.html#list-merchants
  */

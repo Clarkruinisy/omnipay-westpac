@@ -1,12 +1,12 @@
 <?php
 
 /**
- * PaywayRest Create Single Use Card Token Request
+ * Westpac Create Single Use Card Token Request
  */
-namespace Omnipay\PaywayRest\Message;
+namespace Omnipay\Westpac\Message;
 
 /**
- * PaywayRest Create Single Use Card Token Request
+ * Westpac Create Single Use Card Token Request
  *
  * @link https://www.payway.com.au/docs/rest.html#tokenise-a-credit-card
  */

@@ -1,16 +1,16 @@
 <?php
 /**
- * PayWayRest Response
+ * Westpac Response
  */
-namespace Omnipay\PaywayRest\Message;
+namespace Omnipay\Westpac\Message;
 
 use Omnipay\Common\Message\AbstractResponse;
 
 /**
- * PaywayRest Response
+ * Westpac Response
  *
- * Response class for all PaywayRest requests
- * @see \Omnipay\PaywayRest\Gateway
+ * Response class for all Westpac requests
+ * @see \Omnipay\Westpac\Gateway
  */
 class Response extends AbstractResponse
 {

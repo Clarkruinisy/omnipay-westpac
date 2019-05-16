@@ -1,12 +1,12 @@
 <?php
 
 /**
- * PaywayRest check network
+ * Westpac check network
  */
-namespace Omnipay\PaywayRest\Message;
+namespace Omnipay\Westpac\Message;
 
 /**
- * PaywayRest check network
+ * Westpac check network
  *
  * Check network connectivity to PayWay REST API.
  *

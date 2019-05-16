@@ -1,10 +1,10 @@
 <?php
 /**
- * PaywayRest Abstract Request.
+ * Westpac Abstract Request.
  */
-namespace Omnipay\PaywayRest\Message;
+namespace Omnipay\Westpac\Message;
 
-use Omnipay\PaywayRest\Helper\Uuid;
+use Omnipay\Westpac\Helper\Uuid;
 
 /**
  * PayWay REST API Abstract Request.
@@ -13,7 +13,7 @@ use Omnipay\PaywayRest\Helper\Uuid;
  *
  * @todo Add usage documention, including live and test details
  *
- * @see \Omnipay\PaywayRest\Gateway
+ * @see \Omnipay\Westpac\Gateway
  * @link https://www.payway.com.au/rest-docs/index.html
  */
 abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest

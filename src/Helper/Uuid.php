@@ -1,6 +1,6 @@
 <?php
 /** Uuid Helper class */
-namespace Omnipay\PaywayRest\Helper;
+namespace Omnipay\Westpac\Helper;
 
 /**
 *

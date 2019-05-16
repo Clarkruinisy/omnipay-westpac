@@ -1,12 +1,12 @@
 <?php
 
 /**
- * PaywayRest Create Customer Request
+ * Westpac Create Customer Request
  */
-namespace Omnipay\PaywayRest\Message;
+namespace Omnipay\Westpac\Message;
 
 /**
- * PaywayRest Create Customer Request
+ * Westpac Create Customer Request
  *
  * @link https://www.payway.com.au/rest-docs/index.html#create-a-customer
  */

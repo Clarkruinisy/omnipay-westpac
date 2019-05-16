@@ -1,14 +1,14 @@
 <?php
 
 /**
- * PaywayRest Regular Payment Request
+ * Westpac Regular Payment Request
  */
-namespace Omnipay\PaywayRest\Message;
+namespace Omnipay\Westpac\Message;
 
 /**
- * PaywayRest Regular Payment Request
+ * Westpac Regular Payment Request
  *
- * @see \Omnipay\PaywayRest\Gateway
+ * @see \Omnipay\Westpac\Gateway
  * @link https://www.payway.com.au/rest-docs/index.html#schedule-regular-payments
  */
 class RegularPaymentRequest extends AbstractRequest

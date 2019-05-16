@@ -1,14 +1,14 @@
 <?php
 
 /**
- * PaywayRest Purchase Request
+ * Westpac Purchase Request
  */
-namespace Omnipay\PaywayRest\Message;
+namespace Omnipay\Westpac\Message;
 
 /**
- * PaywayRest Purchase Request
+ * Westpac Purchase Request
  *
- * @see \Omnipay\PaywayRest\Gateway
+ * @see \Omnipay\Westpac\Gateway
  * @link https://www.payway.com.au/rest-docs/index.html#process-a-payment
  */
 class PurchaseRequest extends AbstractRequest
