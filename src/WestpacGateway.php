@@ -1,12 +1,12 @@
 <?php
-namespace Omnipay\Westpac;
+namespace Eify\Westpac;
 
 use Omnipay\Common\AbstractGateway;
 
 /**
  * PayWay Credit Card gateway
  */
-class Gateway extends AbstractGateway
+class WestpacGateway extends AbstractGateway
 {
     public function getName()
     {
@@ -98,12 +98,12 @@ class Gateway extends AbstractGateway
     /**
      * Test the PayWay gateway
      * @param  array  $parameters Request parameters
-     * @return \Omnipay\Westpac\Message\CheckNetworkRequest
+     * @return \Eify\Westpac\Message\CheckNetworkRequest
      */
     public function testGateway(array $parameters = array())
     {
         return $this->createRequest(
-            '\Omnipay\Westpac\Message\CheckNetworkRequest',
+            '\Eify\Westpac\Message\CheckNetworkRequest',
             $parameters
         );
     }
@@ -112,7 +112,7 @@ class Gateway extends AbstractGateway
      * Purchase request
      *
      * @param array $parameters
-     * @return \Omnipay\Westpac\Message\PurchaseRequest
+     * @return \Eify\Westpac\Message\PurchaseRequest
      */
     public function purchase(array $parameters = array())
     {
@@ -120,96 +120,96 @@ class Gateway extends AbstractGateway
 
         // schedule regular payment
         if (isset($parameters['frequency']) && $parameters['frequency'] !== 'once') {
-            return $this->createRequest('\Omnipay\Westpac\Message\RegularPaymentRequest', $parameters);
+            return $this->createRequest('\Eify\Westpac\Message\RegularPaymentRequest', $parameters);
         }
 
         // process once-off payment
-        return $this->createRequest('\Omnipay\Westpac\Message\PurchaseRequest', $parameters);
+        return $this->createRequest('\Eify\Westpac\Message\PurchaseRequest', $parameters);
     }
 
     /**
      * Create singleUseTokenId with a CreditCard
      *
      * @param array $parameters
-     * @return \Omnipay\Westpac\Message\CreateSingleUseCardTokenRequest
+     * @return \Eify\Westpac\Message\CreateSingleUseCardTokenRequest
      */
     public function createSingleUseCardToken(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Westpac\Message\CreateSingleUseCardTokenRequest', $parameters);
+        return $this->createRequest('\Eify\Westpac\Message\CreateSingleUseCardTokenRequest', $parameters);
     }
 
     /**
      * Create singleUseTokenId with a Bank Account
      *
      * @param array $parameters
-     * @return \Omnipay\Westpac\Message\CreateSingleUseBankTokenRequest
+     * @return \Eify\Westpac\Message\CreateSingleUseBankTokenRequest
      */
     public function createSingleUseBankToken(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Westpac\Message\CreateSingleUseBankTokenRequest', $parameters);
+        return $this->createRequest('\Eify\Westpac\Message\CreateSingleUseBankTokenRequest', $parameters);
     }
 
     /**
      * Create Customer
      *
      * @param array $parameters
-     * @return \Omnipay\Westpac\Message\CreateCustomerRequest
+     * @return \Eify\Westpac\Message\CreateCustomerRequest
      */
     public function createCustomer(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Westpac\Message\CreateCustomerRequest', $parameters);
+        return $this->createRequest('\Eify\Westpac\Message\CreateCustomerRequest', $parameters);
     }
 
     /**
      * Update Customer contact details
      *
      * @param array $parameters
-     * @return \Omnipay\Westpac\Message\UpdateCustomerContactRequest
+     * @return \Eify\Westpac\Message\UpdateCustomerContactRequest
      */
     public function updateCustomerContact(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Westpac\Message\UpdateCustomerContactRequest', $parameters);
+        return $this->createRequest('\Eify\Westpac\Message\UpdateCustomerContactRequest', $parameters);
     }
 
     /**
      * Get Customer details
      * @param  array  $parameters
-     * @return \Omnipay\Westpac\Message\CustomerDetailRequest
+     * @return \Eify\Westpac\Message\CustomerDetailRequest
      */
     public function getCustomerDetails(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Westpac\Message\CustomerDetailRequest', $parameters);
+        return $this->createRequest('\Eify\Westpac\Message\CustomerDetailRequest', $parameters);
 
     }
 
     /**
      * Get Transaction details
      * @param  array  $parameters
-     * @return \Omnipay\Westpac\Message\TransactionDetailRequest
+     * @return \Eify\Westpac\Message\TransactionDetailRequest
      */
     public function getTransactionDetails(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Westpac\Message\TransactionDetailRequest', $parameters);
+        return $this->createRequest('\Eify\Westpac\Message\TransactionDetailRequest', $parameters);
 
     }
 
     /**
      * Get List of Merchants
      * @param array $parameters
-     * @return \Omnipay\Westpac\Message\MerchantListRequest
+     * @return \Eify\Westpac\Message\MerchantListRequest
      */
     public function getMerchants(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Westpac\Message\MerchantListRequest', $parameters);
+        return $this->createRequest('\Eify\Westpac\Message\MerchantListRequest', $parameters);
     }
 
     /**
      * Get List of Bank Accounts
      * @param array $parameters
-     * @return \Omnipay\Westpac\Message\BankAccountListRequest
+     * @return \Eify\Westpac\Message\BankAccountListRequest
      */
     public function getBankAccounts(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Westpac\Message\BankAccountListRequest', $parameters);
+        return $this->createRequest('\Eify\Westpac\Message\BankAccountListRequest', $parameters);
     }
 }

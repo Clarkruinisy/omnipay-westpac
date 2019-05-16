@@ -2,7 +2,7 @@
 /**
  * Westpac Transaction Detail Request
  */
-namespace Omnipay\Westpac\Message;
+namespace Eify\Westpac\Message;
 
 /**
  * Westpac Merchant ListRequest

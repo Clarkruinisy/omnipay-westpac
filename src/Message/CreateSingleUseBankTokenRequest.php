@@ -3,7 +3,7 @@
 /**
  * Westpac Create Single Use Bank Account Token Request
  */
-namespace Omnipay\Westpac\Message;
+namespace Eify\Westpac\Message;
 
 /**
  * Westpac Create Single Use Bank Account Token Request

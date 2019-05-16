@@ -3,7 +3,7 @@
 /**
  * Westpac Regular Payment Request
  */
-namespace Omnipay\Westpac\Message;
+namespace Eify\Westpac\Message;
 
 /**
  * Westpac Regular Payment Request

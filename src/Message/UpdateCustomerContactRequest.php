@@ -2,7 +2,7 @@
 /**
  * Westpac Update Customer Contact Request
  */
-namespace Omnipay\Westpac\Message;
+namespace Eify\Westpac\Message;
 
 /**
  * Westpac Update Customer Contact Request

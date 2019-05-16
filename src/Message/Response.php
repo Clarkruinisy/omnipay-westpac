@@ -2,7 +2,7 @@
 /**
  * Westpac Response
  */
-namespace Omnipay\Westpac\Message;
+namespace Eify\Westpac\Message;
 
 use Omnipay\Common\Message\AbstractResponse;
 

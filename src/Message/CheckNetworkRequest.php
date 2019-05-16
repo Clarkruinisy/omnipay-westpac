@@ -3,7 +3,7 @@
 /**
  * Westpac check network
  */
-namespace Omnipay\Westpac\Message;
+namespace Eify\Westpac\Message;
 
 /**
  * Westpac check network

@@ -3,7 +3,7 @@
 /**
  * Westpac Create Customer Request
  */
-namespace Omnipay\Westpac\Message;
+namespace Eify\Westpac\Message;
 
 /**
  * Westpac Create Customer Request

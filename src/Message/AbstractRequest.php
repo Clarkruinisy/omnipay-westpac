@@ -2,9 +2,9 @@
 /**
  * Westpac Abstract Request.
  */
-namespace Omnipay\Westpac\Message;
+namespace Eify\Westpac\Message;
 
-use Omnipay\Westpac\Helper\Uuid;
+use Eify\Westpac\Helper\Uuid;
 
 /**
  * PayWay REST API Abstract Request.
@@ -13,10 +13,10 @@ use Omnipay\Westpac\Helper\Uuid;
  *
  * @todo Add usage documention, including live and test details
  *
- * @see \Omnipay\Westpac\Gateway
+ * @see \Eify\Westpac\Gateway
  * @link https://www.payway.com.au/rest-docs/index.html
  */
-abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
+abstract class AbstractRequest extends \Eify\Common\Message\AbstractRequest
 {
     /** @var string Endpoint URL */
     protected $endpoint = 'https://api.payway.com.au/rest/v1';
